@@ -1,0 +1,111 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": "1",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Heure",
+						"size": "regular",
+						"value": "datasources[\"Heure\"][\"time_string_value\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "regular",
+						"value": "Aquacult",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 7
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": "1",
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Température",
+						"value": "datasources[\"Temperature\"][\"temperatureaquacultsnir2019\"]",
+						"units": "°C",
+						"min_value": 0,
+						"max_value": "50"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 7
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Humidité",
+						"value": "datasources[\"humidité\"][\"humiditeaquacultsnir2019\"]",
+						"units": "%",
+						"min_value": 0,
+						"max_value": 100
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "Temperature",
+			"type": "paho_mqtt_js",
+			"settings": {
+				"server": "broker.hivemq.com",
+				"port": 8000,
+				"client_id": "SNIR1",
+				"topics": "temperatureaquacultsnir2019"
+			}
+		},
+		{
+			"name": "Heure",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		},
+		{
+			"name": "humidité",
+			"type": "paho_mqtt_js",
+			"settings": {
+				"server": "broker.hivemq.com",
+				"port": 8000,
+        "client_id": "SNIR3",
+				"topics": "humiditeaquacultsnir2019"
+			}
+		}
+	],
+	"columns": 3
+}

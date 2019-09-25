@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: grey;
+}
+.box{
+  width: 300px;
+  padding: 40px; /*Définie un espace dans tout les sens*/
+  position: absolute; /*Definie la position de la div*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase; /*Transforme toutes les lettre en majuscule*/
+  font-weight: 500; /*Arrange le caratères gras des lettres*/
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block; /*Rassemblr toutes les div ensemble*/
+  margin: 20px auto; /*Crée une marge dans la div (Auto sert à placer au milieu)*/
+  text-align: center;
+  border: 2px solid #3498db; /*Crée une bordure autour avec une couleur*/
+  padding: 14px 10px; /*Gere la hauteur et largeur de l'interieur*/
+  width: 200px; /*gere la taille de la div*/
+  outline: none; /*???*/
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s; /*Genere une animation d'ouverture entre le HTML et le CSS*/
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  /*focus = lorsque l'on clique dessus*/
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  /*hover = lorsque l'on passe la souris dessus*/
+  background: #2ecc71;
+}

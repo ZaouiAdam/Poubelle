@@ -1,0 +1,78 @@
+body{
+  margin: 0; /*marge*/
+  padding: 0; /*Écart de coté*/
+  font-family: sans-serif;
+  background: #34495e;
+}
+.box{
+  width: 300px; /*Largeur*/
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); /*Position du cadre*/
+  background: #191919; 
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase; /*Majuscule*/
+  font-weight: 900;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #CCFFCC; /*Tour de l'encadré ID et MDP*/
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s; 
+}
+select{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ef4f4; /*Encadré "FONCTION"*/
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  width: 280px;
+  border-color: #2ecc71; /*Tour encadré ID,MDP,NOM,PRENOM*/
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #CCFFCC; /*Tour encadré "SE CONNECTER"*/
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]{
+  background: black; /*Couleur intérieure "SE CONNECTER"*/
+}
+
+a{
+color: white;
+}
+
+.taille{
+  width: 150px;
+ }

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Softball</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/StyleSheet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+
+        $(function myfunction() {
+            var cptLocal = 0;
+            $("#Local-").click(function myfunction() {
+                $("#Local").html(--cptLocal);
+                if (cptLocal == 99) {
+                cptLocal = 0;
+                }
+                if (cptLocal < 1) {
+                cptLocal = 0;
+                }
+            });
+            $("#Local+").click(function myfunction() {
+                $("#Local").html(++cptLocal);
+                if (cptLocal == 99) {
+                cptLocal = 0;
+            }
+            });
+            var cptManche = 0;
+            $("#Manche-").click(function myfunction() {
+                $("#Manche").html(--cptManche);
+                if (cptManche == 99) {
+                cptManche = 0;
+                }
+                if (cptManche < 0) {
+                cptManche = 0;
+            }
+            });
+            $("#Manche+").click(function myfunction() {
+                $("#Manche").html(++cptManche);
+                if (cptManche == 99) {
+                cptManche = 0;
+            }
+            });
+            var cptVisiteur = 0;
+            $("#Visiteur-").click(function myfunction() {
+                $("#Visiteur").html(--cptVisiteur);
+                if (cptVisiteur == 99) {
+                cptVisiteur = 0;
+                }
+                if (cptVisiteur < 0) {
+                cptVisiteur = 0;
+            }
+            });
+            $("#Visiteur+").click(function myfunction() {
+                $("#Visiteur").html(++cptVisiteur);
+                if (cptVisiteur == 99) {
+                cptVisiteur = 0;
+            }
+            });
+        });
+    </script>
+</head>
+<body>
+    <section class="row">
+        <center>
+            <article class="col-md-1"></article>
+            <article class="col-md-4">
+                <nav>
+                    <h1 style="color:aqua">Local</h1>
+                </nav>
+            </article>
+            <article class="col-md-2">
+                <nav>
+                    <h1 style="color:aqua">Manche</h1>
+                </nav>
+            </article>
+            <article class="col-md-4">
+                <nav>
+                    <h1 style="color:aqua">Visiteur</h1>
+                </nav>
+            </article>
+            <article class="col-md-1"></article>
+        </center>
+    </section><br /><br />
+    <section class="row">
+        <center>
+            <article class="col-md-1"></article>
+            <article class="col-md-4">
+                <nav>
+                    <h1 id="Local" style="color:aqua">0</h1>
+                    <button type="button" class="btn btn-danger" id="Local-">  -  </button>
+                    <button type="button" class="btn btn-success" id="Local+">  +  </button>
+                </nav>
+            </article>
+            <article class="col-md-2">
+                <nav>
+                    <button type="button" class="btn btn-danger" id="Manche-">  -  </button>
+                    <h1 id="Manche" style="color:aqua">0</h1>
+                    <button type="button" class="btn btn-success" id="Manche-">  +  </button>
+                </nav>
+            </article>
+            <article class="col-md-4">
+                <nav>
+                    <button type="button" class="btn btn-danger" id="Visiteur-">-</button>
+                    <h1 id="Visiteur" style="color:aqua">0</h1>
+                    <button type="button" class="btn btn-success" id="Visiteur-">+</button>
+                </nav>
+            </article>
+            <article class="col-md-1"></article>
+        </center>
+    </section><br /><br />
+    <section class="row">
+        <center>
+            <article class="col-md-1"></article>
+            <article class="col-md-4">
+                <nav>
+                    <h1 style="color:aqua">Retrait</h1>
+                </nav>
+            </article>
+            <article class="col-md-2">
+                <nav>
+                    <h1 style="color:aqua">Strike</h1>
+                </nav>
+            </article>
+            <article class="col-md-4">
+                <nav>
+                    <h1 style="color:aqua">Out</h1>
+                </nav>
+            </article>
+            <article class="col-md-1"></article>
+        </center>
+    </section>
+    <section class="row">
+        <center>
+            <article class="col-md-1"></article>
+            <article class="col-md-4">
+                <div id="Retrait">
+                    <figure class="circle"></figure>
+                </div>
+            </article>
+            <article class="col-md-2">
+                <div id="Strike">
+                    <figure class="circle"></figure>
+                </div>
+            </article>
+            <article class="col-md-4">
+                <div id="Out">
+                    <figure class="circle"></figure>
+                </div>
+            </article>
+            <article class="col-md-1"></article>
+        </center>
+    </section><br /><br />
+</body>
+</html>

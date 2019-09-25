@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="StyleSheet" media="screen" type="text/css" href="StyleSheet.css"/>
+<?php include("menus.php"); ?>
+<link rel="shortcut icon" href="https://icon-icons.com/icons2/281/PNG/256/Sandwhich-icon_30278.png">
+    <title>Square Eat</title>
+</head>
+<body>
+    <center>
+        <nav>
+            <h1 class="titre">SQUARE EAT</h1>
+        </nav>
+        <br /><br /> 
+        <h3><a href="#">Composer votre creation</a></h3><br><br>
+        <table>
+	        <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Nom :</td>
+	            <td colspan ="2"><input type="Text" class="text" id="NOM"></td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Prenom :</td>
+	            <td colspan ="2"><input type="Text" class="text" id="PRE"></td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Nombre de sandwichs :</td>
+	            <td colspan ="2"><input type="Text" class="text" id="NBR"></td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Adresse :</td>
+	            <td colspan ="2"><input type="textarea" class="text" id="ADD"></td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Premiere Viande :</td>
+	             <td colspan ="2"><select class="text" id="1V" >
+                        <option value="1">Choisissez</option>
+	                    <option value="1">Poulet Rouge</option>
+                        <option value="1">Poulet Jaune</option>
+                        <option value="1">Escalope</option>
+                        <option value="1">Steak</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Deuxieme viande (facultatif) :</td>
+	            <td colspan ="2"><select class="text" id="2V" value="1">
+                        <option>Choisissez</option>
+                        <option value="0">Pas de viande</option>
+	                    <option value="1">Poulet Rouge</option>
+                        <option value="1">Poulet Jaune</option>
+                        <option value="1">Escalope</option>
+                        <option value="1">Steak</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Troisieme viande (facultatif) :</td>
+	            <td colspan ="2"><select class="text" id="3V" value="1">
+                        <option>Choisissez</option>
+                        <option value="0">Pas de viande</option>
+	                    <option value="1">Poulet Rouge</option>
+                        <option value="1">Poulet Jaune</option>
+                        <option value="1">Escalope</option>
+                        <option value="1">Steak</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Garniture :</td>
+	            <td colspan ="2"><select  class="text" id="GAR" value="1">
+                        <option>Choisissez</option>
+                        <option value="0">Pas de garniture</option>
+	                    <option value="2.5">Complet</option>
+                        <option value="2">Salade Tomate</option>
+                        <option value="2">Salade Oignon</option>
+                        <option value="2">Tomate Oignon</option>
+                        <option value="1">Oignon</option>
+                        <option value="1">Tomate</option>
+                        <option value="1">Salade</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan ="2" style="arial; color:#005B59;">Desert : </td>
+	             <td  colspan ="2">
+                     <input type="checkbox" class="text" id="TIR">Tiramisu
+                     <input type="checkbox" class="text" id="GLA">Glace
+                     <input type="checkbox" class="text" id="TAR">Tarte au Daims
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="2" style="arial; color:#005B59;">Sauce :</td>
+	            <td colspan ="2"><select  class="text">
+                        <option>Choisissez</option>
+                        <option>Pas de Sauce</option>
+	                    <option>Ketchup</option>
+                        <option>Mayonaise</option>
+                        <option>Moutarde</option>
+                        <option>Biggy Burger</option>
+                        <option>Blanche (Maison)</option>
+                        <option>Harissa</option>
+                        <option>Fish to Fish</option>
+                        <option>Samouraï</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+	            <td colspan ="4"><input type="Button" class="text" value="Commander" onclick="Commande()"></td>
+            </tr>
+            <tr>
+	            <td colspan ="2" style="arial; color:#005B59;">Prix :</td>
+	            <td colspan ="2"><input type="label" class="text" id="PRI" disabled></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+    </center>
+    <footer>
+        Contact
+        <center>
+            Tel : 07.81.71.48.40
+        </center>
+    </footer>
+	<script type="text/javascript" src="JavaScript.js"></script>
+</body>
+</html>

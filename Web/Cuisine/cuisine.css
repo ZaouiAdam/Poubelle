@@ -1,0 +1,60 @@
+body{
+  font-family: sans-serif;
+  background-image: image(Fond.jepg);
+}
+.box{
+  background: #555555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding: 10px;
+  width: 400px;
+}
+h1{
+  color: white ;
+  text-transform: uppercase;
+  font-weight: 1;
+}
+.box input[type="text"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 200px;
+  padding: 14px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  transition: 0.25s;
+  outline: none;
+}
+.box input[type="text"]:focus{
+  width: 280px;
+  border-color: white;
+}
+.box input[type="text"]:hover{
+  border-color: black;
+}
+.box input[type="submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 100px;
+  padding: 14px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  transition: 0.25s;
+  outline: none;
+}
+.box input[type="submit"]:hover{
+  color: black;
+  border-color: black;
+}
